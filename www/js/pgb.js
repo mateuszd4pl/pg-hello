@@ -20,3 +20,11 @@ function deviceInfo() {
 	navigator.notification.alert(info);
 	
 }
+
+function personalData() {
+
+	info2 =  'Mateusz Dyrka';
+
+	navigator.notification.alert(info2);
+	
+}
