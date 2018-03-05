@@ -4,11 +4,13 @@
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 		<script src="js/pgb.js"></script>
 		<script src="cordova.js"></script>
+		<plugin name="cordova-plugin-network-information" spec="~2.0.1" />
 	</head>
 	<body onload="init()">
 		<h1>Hello World!</h1>
 		<p id="dp"></p>
 		<input type="button" onclick="deviceInfo()" value="Let me introduce myself!">
 		<input type="button" onclick="personalData()" value="Let the Author introduce himself!!!">
+		<input type="button" onclick="checkConnection()" value="Check your network">
 	</body>
 </html>
