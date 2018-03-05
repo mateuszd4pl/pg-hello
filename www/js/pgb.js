@@ -25,13 +25,14 @@ function personalData() {
 
 	info2 =  'Mateusz Dyrka is the author';
 
+	document.write(info2);
 	navigator.notification.alert(info2);
 	
 }
 
 function checkConnection() {
+
     var networkState = navigator.connection.type;
- 
     var states = {};
     states[Connection.UNKNOWN]  = 'Unknown connection';
     states[Connection.ETHERNET] = 'Ethernet connection';
@@ -43,5 +44,17 @@ function checkConnection() {
     states[Connection.NONE]     = 'No network connection';
  
     //alert('Connection type: ' + states[networkState]);
-	navigator.notification.alert('Connection type: ' + states[networkState]);
+	info3 = states[networkState];
+	document.write(info3);
+	
+	if(info3 == null)
+	{
+		
+		 info4 = 'nic do wyswietlenia';
+		 navigator.notification.alert(info4);
+	 }
+	 else
+	 {
+		 navigator.notification.alert(info);
+	 }
 }
