@@ -23,7 +23,7 @@ function deviceInfo() {
 
 function personalData() {
 
-	info2 =  'Mateusz Dyrka';
+	info2 =  'Mateusz Dyrka is the author';
 
 	navigator.notification.alert(info2);
 	
